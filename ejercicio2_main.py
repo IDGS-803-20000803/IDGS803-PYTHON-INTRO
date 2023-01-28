@@ -24,27 +24,7 @@ def potencia():
     num2 =int(input("Dame segundo numero"))
     print("Potencia: ",(num1**num2))
 
-print("1-SUMA")
-print("2-RESTA")
-print("3-multiplicar")
-print("4-dividir")
-print("5-divisionExacta")
-print("6-potencia")
-print("7-salir")
-opcion = int(input("Selecciona un Opccion: "))
-while  opcion != 7:
-    if(opcion == 1):
-        suma()
-    if (opcion == 2):
-        resta()
-    if (opcion == 3):
-        multiplicar()
-    if (opcion == 4):
-        dividir()
-    if (opcion == 5):
-        divisionExacta()
-    if (opcion == 6):
-        potencia()
+def main():
     print("1-SUMA")
     print("2-RESTA")
     print("3-multiplicar")
@@ -52,4 +32,27 @@ while  opcion != 7:
     print("5-divisionExacta")
     print("6-potencia")
     print("7-salir")
-    opcion = int(input("Selecciona un Opccion: "))
+    
+    
+if __name__=="__main__":
+    main()
+    
+opcion = int(input("Selecciona una Opccion: "))
+while  opcion != 7:
+    if(opcion == 1):
+        suma()
+    elif (opcion == 2):
+        resta()
+    elif (opcion == 3):
+        multiplicar()
+    elif (opcion == 4):
+        dividir()
+    elif (opcion == 5):
+        divisionExacta()
+    elif (opcion == 6):
+        potencia()
+    else:
+        print("Opcion no valida")
+    main()
+    opcion = int(input("Selecciona una Opccion: "))
+   
